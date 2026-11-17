@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/candle233/candle-game-resources",
+  "integration_version": "0.1.0",
+  "source_kind": "local_prepublication_snapshot",
+  "approved_commit": null,
+  "release_tag": null,
+  "template_path": "templates/unity-workflow",
+  "skills_path": "skills",
+  "installation_mode": "project_local_copies",
+  "source_archive_sha256": "13f3f43348e5f4e1ae7d43962facf40564c33a1992d4617a5b7b8b75d9b30b4c",
+  "framework_license": null,
+  "public_redistribution": "requires_rights_confirmation",
+  "third_party_code_vendored": false,
+  "external_execution_default": "disabled_until_reviewed",
+  "notes": "This records provenance, not an approved published dependency. Record the actual reviewed commit when a release exists; never resolve main automatically."
+}

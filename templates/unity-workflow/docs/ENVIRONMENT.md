@@ -1,0 +1,9 @@
+# Local environment acceptance
+
+Record actual facts here or in a setup task: repository path, Editor version from ProjectSettings/ProjectVersion.txt, license/build modules, render pipeline, Test Framework version, main scene(s), target platform/device and Python/client versions. Do not pick unrequested upgrades. The clean package intentionally does not replace Packages/manifest.json or ProjectSettings.
+
+Initial acceptance: import the overlay, resolve packages, open the Editor once, let Unity create .meta files, inspect/commit the baseline, close the Editor, run doctor then verify. Configure at least one enabled build scene and set an approved `harness/project.json` `unity.build_target` before the build gate. Supported CLI targets: StandaloneWindows64, StandaloneOSX, StandaloneLinux64, WebGL. Build support and licensing must exist locally. Render-dependent PlayMode tests require a real display/GPU or an intentionally configured test display; no universal headless assumption.
+
+The verification runner rejects an interactive Editor lock and has its own exclusive process lock. If the runner crashes, inspect active processes before removing its stale Artifacts/harness/unity.lock. Never automatically delete Temp/UnityLockfile. Editor compile receipts report the actual Unity version; a mismatch fails. NUnit XML and process/log exits are checked separately.
+
+CI offline checks can run on ordinary workers. Unity CI is manual, self-hosted, and uses the `unity-validation` environment; create that environment with appropriate approvers in your repository. Set UNITY_EDITOR on the runner and provide an appropriate license without committing secrets. CI configuration does not itself grant a license or configure an approval policy. Never execute untrusted fork code on this runner. There is no deployment step.

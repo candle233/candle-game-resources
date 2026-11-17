@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_type": "user_supplied_archive",
+  "archive": "Unity_GameDev_Workflow_Complete_Clean.zip",
+  "archive_sha256": "13f3f43348e5f4e1ae7d43962facf40564c33a1992d4617a5b7b8b75d9b30b4c",
+  "original_manifest_verified": true,
+  "original_manifest_file_count": 61,
+  "author": null,
+  "upstream_url": null,
+  "license": null,
+  "redistribution_status": "permission_required_before_public_release",
+  "notes": "No third-party candidate source code, original validation reports, or original ZIPs are redistributed. License and authorship were not present in the supplied archive."
+}

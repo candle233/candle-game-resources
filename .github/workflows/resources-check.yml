@@ -1,0 +1,27 @@
+name: Resource checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+      - run: python -I -X utf8 tools/resources.py verify
+      - run: python -I -X utf8 -m unittest discover -s tests -v
+      - run: python -I -X utf8 -m unittest discover -s templates/unity-workflow/harness/tests -v
+      - run: python -I -X utf8 tools/resources.py package-skills
+# Syntax/integrity checks only; no third-party execution or automatic publishing.

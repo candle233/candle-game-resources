@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Review"
+  short_description: "Release Review for approved Unity project tasks"
+  default_prompt: "Use $release-review for the current approved project task."

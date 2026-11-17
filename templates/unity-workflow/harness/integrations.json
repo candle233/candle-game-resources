@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "external_execution_default": "disabled_until_reviewed",
+  "asset_routes": {
+    "music": [
+      "Eagle",
+      "freesound-mcp",
+      "SoundCraft",
+      "prompt-todo"
+    ],
+    "sfx": [
+      "Eagle",
+      "freesound-mcp",
+      "SoundCraft",
+      "prompt-todo"
+    ],
+    "model": [
+      "Eagle",
+      "arielshad/3d-asset-server",
+      "Blender",
+      "prompt-todo"
+    ],
+    "image": [
+      "Eagle",
+      "Lucide",
+      "Tabler Icons",
+      "Heroicons",
+      "Iconify MCP",
+      "neno-is-ooo/mcp-openverse",
+      "jeanpfs/stock-images-mcp",
+      "jezweb/nasa-mcp-server",
+      "VectorCraft",
+      "PhotoCraft",
+      "image-generation",
+      "prompt-todo"
+    ],
+    "vfx": [
+      "Eagle",
+      "Unity native VFX / particles",
+      "pixabay-mcp",
+      "vfx-mcp",
+      "image-to-flipbook pipeline",
+      "prompt-todo"
+    ]
+  },
+  "skill_sources": [
+    {
+      "repository": "https://github.com/Unity-Technologies/skills",
+      "purpose": "Unity engineering",
+      "status": "user_requested_candidate",
+      "approved_commit": null,
+      "installed": false
+    },
+    {
+      "repository": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "purpose": "Game-development catalog",
+      "status": "user_requested_candidate",
+      "approved_commit": null,
+      "installed": false
+    },
+    {
+      "repository": "https://github.com/Yuki001/game-dev-skills",
+      "purpose": "Game design / development",
+      "status": "user_requested_candidate",
+      "approved_commit": null,
+      "installed": false
+    },
+    {
+      "repository": "https://github.com/Hanjo92/roguelike-game-designer-skill",
+      "purpose": "Roguelike design",
+      "status": "user_requested_candidate",
+      "approved_commit": null,
+      "installed": false
+    },
+    {
+      "repository": "https://github.com/861172923/Unity-Skills",
+      "purpose": "Unity editor operations",
+      "status": "user_requested_candidate",
+      "approved_commit": null,
+      "installed": false
+    },
+    {
+      "repository": "https://github.com/MuharremTozan/unity-agent-skills",
+      "purpose": "Unity patterns",
+      "status": "user_requested_candidate",
+      "approved_commit": null,
+      "installed": false
+    },
+    {
+      "repository": "https://github.com/Logiiiii/unity-agent-skills",
+      "purpose": "Unity debugging / workflows",
+      "status": "user_requested_candidate",
+      "approved_commit": null,
+      "installed": false
+    }
+  ],
+  "providers": [
+    {
+      "name": "Blender",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "Eagle",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "Heroicons",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "Iconify MCP",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "Lucide",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "PhotoCraft",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "SoundCraft",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "Tabler Icons",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "Unity native VFX / particles",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "VectorCraft",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "arielshad/3d-asset-server",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "freesound-mcp",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "image-generation",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "image-to-flipbook pipeline",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "jeanpfs/stock-images-mcp",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "jezweb/nasa-mcp-server",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "neno-is-ooo/mcp-openverse",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "pixabay-mcp",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    },
+    {
+      "name": "vfx-mcp",
+      "status": "not_connected",
+      "approved_version": null,
+      "budget_usd": 0,
+      "credential_env": null,
+      "approved_tools": []
+    }
+  ],
+  "notes": "Routing and inventory metadata for this Harness, not native MCP config. Resolve exact repositories/executables and read their licenses before enabling; never invent an npx package from a display name."
+}

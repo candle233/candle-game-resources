@@ -1,0 +1,7 @@
+# Native Codex config. Trust this project before loading. Inherit your model/auth.
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+[sandbox_workspace_write]
+network_access = false
+[features]
+hooks = true

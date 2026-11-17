@@ -1,0 +1,3 @@
+# Disabled baseline only. Merge reviewed entries into your own client configuration.
+# No credentials, remote endpoints, or inferred package executables are included.
+[mcp_servers]

@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "skills/asset-production/SKILL.md",
+      "target": ".agents/skills/asset-production/SKILL.md",
+      "sha256": "20c562cfebc30253790e5ba929f63f696d7b3fef58451fc178bf8175879c7e1c"
+    },
+    {
+      "path": "skills/asset-production/agents/openai.yaml",
+      "target": ".agents/skills/asset-production/agents/openai.yaml",
+      "sha256": "ab2735e10f944da2cc4081a033dd67f69d134ef8d166fdb46c07a6022c5f11c6"
+    },
+    {
+      "path": "skills/design-change/SKILL.md",
+      "target": ".agents/skills/design-change/SKILL.md",
+      "sha256": "17660251ffc32c52c9b0864ca3796a152f6003f16ae452ac77f50375c0bcf911"
+    },
+    {
+      "path": "skills/design-change/agents/openai.yaml",
+      "target": ".agents/skills/design-change/agents/openai.yaml",
+      "sha256": "05280f07f6ae6be0c7569596fe86722173858d0c08384b773e9f22e002c8d96e"
+    },
+    {
+      "path": "skills/release-review/SKILL.md",
+      "target": ".agents/skills/release-review/SKILL.md",
+      "sha256": "273942e5054523967e7e462d9e87f649125526f46653472730d0ecdc620059d8"
+    },
+    {
+      "path": "skills/release-review/agents/openai.yaml",
+      "target": ".agents/skills/release-review/agents/openai.yaml",
+      "sha256": "8a4df2d090826397159d0debf87239f4d3f2a8200451e827b515a6a66b4380c0"
+    },
+    {
+      "path": "skills/unity-implementation/SKILL.md",
+      "target": ".agents/skills/unity-implementation/SKILL.md",
+      "sha256": "293eb88bc5eceda76d87f8440152208dc4735e687eb1fd3db2f840dfcd36c3a9"
+    },
+    {
+      "path": "skills/unity-implementation/agents/openai.yaml",
+      "target": ".agents/skills/unity-implementation/agents/openai.yaml",
+      "sha256": "e9138f466cb8135a6700bdc88f1a7184072802270783b2042a5198900bd00c5b"
+    },
+    {
+      "path": "skills/unity-verification/SKILL.md",
+      "target": ".agents/skills/unity-verification/SKILL.md",
+      "sha256": "672d311ca93984776fe5cd1ac4b2cdef867869cb20d0ead17718c879914559f7"
+    },
+    {
+      "path": "skills/unity-verification/agents/openai.yaml",
+      "target": ".agents/skills/unity-verification/agents/openai.yaml",
+      "sha256": "909dfb20f054a9035024bc407702c484a940d109ed2cca556d12c061feed2c87"
+    },
+    {
+      "path": "skills/workflow-orchestrator/SKILL.md",
+      "target": ".agents/skills/workflow-orchestrator/SKILL.md",
+      "sha256": "b3ee5341a19ae645e643c2b31b68b2229339526ed81f08e457c10d8e193ccb44"
+    },
+    {
+      "path": "skills/workflow-orchestrator/agents/openai.yaml",
+      "target": ".agents/skills/workflow-orchestrator/agents/openai.yaml",
+      "sha256": "36cdc83cc415d82937112cfdc6942d3a771e1801aeb397da786c83440b0b30c5"
+    },
+    {
+      "path": "templates/unity-workflow/.codex/config.toml",
+      "target": ".codex/config.toml",
+      "sha256": "061509bac192e9d115c683e7f857ca5c16b340cde3b3e91e4b0ba1f961701ac7"
+    },
+    {
+      "path": "templates/unity-workflow/.codex/hooks.json",
+      "target": ".codex/hooks.json",
+      "sha256": "47e39692f4d84d35c542bfd9a08ed2ce538b21d62a551b1e8909641ee8e7d059"
+    },
+    {
+      "path": "templates/unity-workflow/.codex/rules/safety.rules",
+      "target": ".codex/rules/safety.rules",
+      "sha256": "c17f183b1649d63ce5a072e78cc2259e6f5630e763d61d09e2945c836d3bc739"
+    },
+    {
+      "path": "templates/unity-workflow/.gitattributes",
+      "target": ".gitattributes",
+      "sha256": "fbafd775764ea31e99fa8dcd3c88a501251113a61a9ced9455db88227c13528d"
+    },
+    {
+      "path": "templates/unity-workflow/.github/workflows/unity-validation.yml",
+      "target": ".github/workflows/unity-validation.yml",
+      "sha256": "7c51d2d1649bb5acf8e62c057af4192e19db6a9cc396a92c4b98bb2d534a2403"
+    },
+    {
+      "path": "templates/unity-workflow/.github/workflows/workflow-check.yml",
+      "target": ".github/workflows/workflow-check.yml",
+      "sha256": "8fdcbd42cce2c15399132b53a2c93278fd1badd4f02274d6bcf7c9a84fd097ed"
+    },
+    {
+      "path": "templates/unity-workflow/.gitignore",
+      "target": ".gitignore",
+      "sha256": "eaeda659cac9dd0a892f91e6b353a824b2cadc955d9300abbfedef9caa1e0cf5"
+    },
+    {
+      "path": "templates/unity-workflow/AGENTS.md",
+      "target": "AGENTS.md",
+      "sha256": "ae2744719c4d927a180d9910297d42dba29b249f374f00be6e1f1293c05f9612"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Editor.meta",
+      "target": "Assets/Editor.meta",
+      "sha256": "ecbcd3e24f25a77366a52beab171a0a90003b3fd7f95a800fcd6ccfe8f85dfbd"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Editor/WorkflowHarness.meta",
+      "target": "Assets/Editor/WorkflowHarness.meta",
+      "sha256": "69f5bfc2c395b42a8b6cfa172e9668343531d3c2f4481afbfe459619562c1ae3"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Editor/WorkflowHarness/EditorAutomation.cs",
+      "target": "Assets/Editor/WorkflowHarness/EditorAutomation.cs",
+      "sha256": "3a9d48a34f247578313cedc7e78b4b5c9fe8ce4a95685b65f1e9cbf7d5774ad3"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Editor/WorkflowHarness/EditorAutomation.cs.meta",
+      "target": "Assets/Editor/WorkflowHarness/EditorAutomation.cs.meta",
+      "sha256": "542f3edfc528cb04949be8925a1ead3ea2f27b2bbcca7bc6e187ad0d99215b79"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests.meta",
+      "target": "Assets/Tests.meta",
+      "sha256": "5b642821c86c1433c2e190d853d1cd30dc3aba0d36b2e06fb1df15b2ebe6a9af"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness.meta",
+      "target": "Assets/Tests/WorkflowHarness.meta",
+      "sha256": "fcb439a3fb5617c08bf6b732cb306175194ee9bb2ebf5b91ef88fcaa088d1504"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/EditMode.meta",
+      "target": "Assets/Tests/WorkflowHarness/EditMode.meta",
+      "sha256": "5b42d82307eda3b02d09cb64b44d7d3e8eb50560d7ac0fb10801367672d728f9"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/EditMode/ConnectivityTests.cs",
+      "target": "Assets/Tests/WorkflowHarness/EditMode/ConnectivityTests.cs",
+      "sha256": "d85efa995cf9e4d7f7f5469926440da8e49353c74f74fa7f619b44383f636815"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/EditMode/ConnectivityTests.cs.meta",
+      "target": "Assets/Tests/WorkflowHarness/EditMode/ConnectivityTests.cs.meta",
+      "sha256": "5e7415fb5ddeeff540ea8d24fde227d48626bb9457c88f08257957d898e53c0b"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/EditMode/WorkflowHarness.EditMode.Tests.asmdef",
+      "target": "Assets/Tests/WorkflowHarness/EditMode/WorkflowHarness.EditMode.Tests.asmdef",
+      "sha256": "706f0d292251f597d949a99abdeffea858ddd7633c01cb8bcbd05f372d91d078"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/EditMode/WorkflowHarness.EditMode.Tests.asmdef.meta",
+      "target": "Assets/Tests/WorkflowHarness/EditMode/WorkflowHarness.EditMode.Tests.asmdef.meta",
+      "sha256": "61c083d2b79aa6348d076e0e6f93de55e52360be3c08d5486d2bb8e7a75a37b5"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/PlayMode.meta",
+      "target": "Assets/Tests/WorkflowHarness/PlayMode.meta",
+      "sha256": "a4760efa4db98ea5bfeefa13c251d3740dfb342203bfc81c769d1f5480dac7a3"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/PlayMode/ConnectivityTests.cs",
+      "target": "Assets/Tests/WorkflowHarness/PlayMode/ConnectivityTests.cs",
+      "sha256": "58d48e8b74e4867075cc1bce64b6d2ac8639af57a346f6b9e1f2e32b9a03c8a2"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/PlayMode/ConnectivityTests.cs.meta",
+      "target": "Assets/Tests/WorkflowHarness/PlayMode/ConnectivityTests.cs.meta",
+      "sha256": "4715a837769c7593701e4129e158b2aae1c61fb1e73fa876e00d5973e8771885"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/PlayMode/WorkflowHarness.PlayMode.Tests.asmdef",
+      "target": "Assets/Tests/WorkflowHarness/PlayMode/WorkflowHarness.PlayMode.Tests.asmdef",
+      "sha256": "c662a8628487d0652637a00e67b9a7fadde434eef2724d99df7d13566b2c0edc"
+    },
+    {
+      "path": "templates/unity-workflow/Assets/Tests/WorkflowHarness/PlayMode/WorkflowHarness.PlayMode.Tests.asmdef.meta",
+      "target": "Assets/Tests/WorkflowHarness/PlayMode/WorkflowHarness.PlayMode.Tests.asmdef.meta",
+      "sha256": "8aee49035b18f43bf5f12cf50c6eb59ece0051737f09d53a55fcda2e3edaabb4"
+    },
+    {
+      "path": "templates/unity-workflow/START_HERE_ZH.md",
+      "target": "START_HERE_ZH.md",
+      "sha256": "e7f0a6b5702317d0b4f2d348597fdb32c03a7865ef647c7150a4070efcd50dc9"
+    },
+    {
+      "path": "templates/unity-workflow/WORKFLOW.md",
+      "target": "WORKFLOW.md",
+      "sha256": "0e82195e7773351e9e01f6cfbe8c7c99c92ec667d2a5aadc4c8c26e3f334671c"
+    },
+    {
+      "path": "templates/unity-workflow/design/CURRENT.md",
+      "target": "design/CURRENT.md",
+      "sha256": "ac4fcda627424bc93d63cf9a76dc60f04d45ff9b8d28de9c88de5396960adedd"
+    },
+    {
+      "path": "templates/unity-workflow/design/inputs/README.md",
+      "target": "design/inputs/README.md",
+      "sha256": "a7a26417e441d5c00694074c2c2d0d5cb09b2273ff57aa381dbdaf0b210cba2e"
+    },
+    {
+      "path": "templates/unity-workflow/docs/ADAPTERS.md",
+      "target": "docs/ADAPTERS.md",
+      "sha256": "709bbdb3806f9ee9d0d194a395bce1cbdac8e60990575be5058871997f60bf02"
+    },
+    {
+      "path": "templates/unity-workflow/docs/ASSETS.md",
+      "target": "docs/ASSETS.md",
+      "sha256": "ea626a712ef42b1f1078cecad66f7b24829c70d1d30af26cf0cccbe185eb2044"
+    },
+    {
+      "path": "templates/unity-workflow/docs/CHANGE_CONTROL.md",
+      "target": "docs/CHANGE_CONTROL.md",
+      "sha256": "17e7408630dde8bd7d45bc20acf26029ef41c68b34d70230b0eff7d608a746eb"
+    },
+    {
+      "path": "templates/unity-workflow/docs/ENVIRONMENT.md",
+      "target": "docs/ENVIRONMENT.md",
+      "sha256": "ef6f39e44636681e2aa3ae2a574fbbf4134f429d9bcf61514ebe293090a21952"
+    },
+    {
+      "path": "templates/unity-workflow/docs/PERMISSIONS.md",
+      "target": "docs/PERMISSIONS.md",
+      "sha256": "0a47363b4f4d69929b01455b261a787c186a5c1f86bea6dab8660ba81cb52251"
+    },
+    {
+      "path": "templates/unity-workflow/docs/QUALITY.md",
+      "target": "docs/QUALITY.md",
+      "sha256": "c6382f6279c28950fff8dadd86881542d5fc6ff49a744394dd34f53733495cd9"
+    },
+    {
+      "path": "templates/unity-workflow/docs/SOURCES.md",
+      "target": "docs/SOURCES.md",
+      "sha256": "231a0dad38aee4bcd9acd63dafd0bdfd21a24e52b166bdf55d0fd117f2442513"
+    },
+    {
+      "path": "templates/unity-workflow/harness/README.md",
+      "target": "harness/README.md",
+      "sha256": "6650f9f155556f13f9bcedb6999c52e2021ec6171ad70b9c4e1da28e6e32870b"
+    },
+    {
+      "path": "templates/unity-workflow/harness/RESOURCE_ORIGIN.md",
+      "target": "harness/RESOURCE_ORIGIN.md",
+      "sha256": "3b4578a651f5e80fd7036fb09a271930f7a0ad99e2b54206a89f9598c2ad403d"
+    },
+    {
+      "path": "templates/unity-workflow/harness/assets/registry.json",
+      "target": "harness/assets/registry.json",
+      "sha256": "5ac9b6e199eec84b85fe630eb9be16d5473f7cf84e4e8f4a8f36254fbf91ec28"
+    },
+    {
+      "path": "templates/unity-workflow/harness/integrations.json",
+      "target": "harness/integrations.json",
+      "sha256": "e2279d78ded9f18836bde8c5259295e9481a34e528db438fc471ca253ba7101c"
+    },
+    {
+      "path": "templates/unity-workflow/harness/project.json",
+      "target": "harness/project.json",
+      "sha256": "9f968eb80a71edb2a144b97e78aecf24b90b4507e5576f8ab59b80491d8d88f9"
+    },
+    {
+      "path": "templates/unity-workflow/harness/resources.lock.json",
+      "target": "harness/resources.lock.json",
+      "sha256": "e03877694a63eedafecc5bf324cded7d9885068b1736b2458eb3b31b18e13320"
+    },
+    {
+      "path": "templates/unity-workflow/harness/scripts/assets.py",
+      "target": "harness/scripts/assets.py",
+      "sha256": "1a02bd5691f9120ccc908703a89d4cbcb59c17706a7526e23fb3c3dd787de943"
+    },
+    {
+      "path": "templates/unity-workflow/harness/scripts/common.py",
+      "target": "harness/scripts/common.py",
+      "sha256": "37f6585db15b022e65368dc5a7ba5d66bb14dd6d325570de77bb96704be8a5eb"
+    },
+    {
+      "path": "templates/unity-workflow/harness/scripts/configure.py",
+      "target": "harness/scripts/configure.py",
+      "sha256": "3a71acf3018295e55f6ace3c4ab8f3c36d10e27698967a7a08536456dbdf8bf1"
+    },
+    {
+      "path": "templates/unity-workflow/harness/scripts/hooks.py",
+      "target": "harness/scripts/hooks.py",
+      "sha256": "8ea0b284c9ad5b8ef13d54d8901133f2c9c6cbc21641a1895141ddfe6f29beff"
+    },
+    {
+      "path": "templates/unity-workflow/harness/scripts/install.py",
+      "target": "harness/scripts/install.py",
+      "sha256": "dfd68adaf923edd7835425fc67b998c782225310f3c8040fbf294bb66998e26d"
+    },
+    {
+      "path": "templates/unity-workflow/harness/scripts/unity_cli.py",
+      "target": "harness/scripts/unity_cli.py",
+      "sha256": "37740ea7c5e4507ff16ab2afdb5efb297d3ae567b1d91a6847ff7f7685b23e7a"
+    },
+    {
+      "path": "templates/unity-workflow/harness/scripts/workflow.py",
+      "target": "harness/scripts/workflow.py",
+      "sha256": "7aae1dab4231720fbf59a70c59f6904de846008a5fc8fc29ced87c97e745f70a"
+    },
+    {
+      "path": "templates/unity-workflow/harness/templates/asset-brief.md",
+      "target": "harness/templates/asset-brief.md",
+      "sha256": "2cca2c0ba59f5bc58f94ee343fee65d468846c4ad07f310e6e7c61102b509070"
+    },
+    {
+      "path": "templates/unity-workflow/harness/templates/asset-record.json",
+      "target": "harness/templates/asset-record.json",
+      "sha256": "c40b17e14b83b36a5c3f5dea7aa8f380d8bce98d0b1251c5ab05d457f808a7b2"
+    },
+    {
+      "path": "templates/unity-workflow/harness/templates/change.md",
+      "target": "harness/templates/change.md",
+      "sha256": "a78217799a7705a8b824d73dfc8464b838dcf9918b7182dca8d315b876b1dd90"
+    },
+    {
+      "path": "templates/unity-workflow/harness/templates/review.md",
+      "target": "harness/templates/review.md",
+      "sha256": "5f365604154c7c7b0535cbf1661df513f28d0ef953a61c252eb9aff2dd2da7ba"
+    },
+    {
+      "path": "templates/unity-workflow/harness/tests/test_workflow.py",
+      "target": "harness/tests/test_workflow.py",
+      "sha256": "450aa04aee90e6d679dd862bbbbdfd0816723d8874e7c0e9da7708b0577c0179"
+    },
+    {
+      "path": "templates/unity-workflow/tasks/README.md",
+      "target": "tasks/README.md",
+      "sha256": "6266a5561ebeefda3359353ac85f67ae7d08d0d720d3fd30fe9054deac9fbd49"
+    },
+    {
+      "path": "templates/unity-workflow/todo/README.md",
+      "target": "todo/README.md",
+      "sha256": "bd43b1be0c7eaaf1b0e7b3c2a8836c4cebbeac96ee9e4cde00219d7bff27193f"
+    }
+  ]
+}

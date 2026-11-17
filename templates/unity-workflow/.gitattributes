@@ -1,0 +1,12 @@
+# Keep workflow/resource fingerprints portable across operating systems.
+* text=auto eol=lf
+*.zip -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.fbx -text
+*.blend -text
+*.wav -text
+*.mp3 -text
+*.ogg -text
+*.mp4 -text

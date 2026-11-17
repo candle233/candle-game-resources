@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Change"
+  short_description: "Design Change for approved Unity project tasks"
+  default_prompt: "Use $design-change for the current approved project task."

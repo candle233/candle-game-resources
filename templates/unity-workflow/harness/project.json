@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "name": "Candle Unity Workflow",
+  "mode": "task_scoped",
+  "design_entry": "design/CURRENT.md",
+  "max_active_tasks_per_checkout": 1,
+  "max_verification_attempts": 3,
+  "command_timeout_seconds": 1800,
+  "unity": {
+    "editor_env": "UNITY_EDITOR",
+    "build_target": null
+  },
+  "asset_roots": [
+    "Assets"
+  ],
+  "asset_extensions": [
+    ".fbx",
+    ".glb",
+    ".gltf",
+    ".blend",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".tga",
+    ".tif",
+    ".tiff",
+    ".exr",
+    ".hdr",
+    ".svg",
+    ".wav",
+    ".mp3",
+    ".ogg",
+    ".flac",
+    ".mp4",
+    ".mov",
+    ".webm"
+  ],
+  "fingerprint_paths": [
+    "Assets",
+    "Packages",
+    "ProjectSettings",
+    "design",
+    "AGENTS.md",
+    "WORKFLOW.md",
+    "docs",
+    ".agents",
+    ".codex",
+    "harness/project.json",
+    "harness/integrations.json",
+    "harness/assets",
+    "harness/scripts",
+    "harness/tests",
+    ".github",
+    "harness/resources.lock.json",
+    "harness/resource-snapshot.json"
+  ],
+  "notes": "Harness-owned schema, not a native Codex or ZCode configuration. No game constants are imposed."
+}

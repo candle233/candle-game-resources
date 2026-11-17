@@ -1,0 +1,16 @@
+{
+  "id": "REPLACE_WITH_STABLE_ID",
+  "file": "Assets/REPLACE_WITH_REAL_FILE",
+  "sha256": "REPLACE_WITH_FILE_SHA256",
+  "origin": "downloaded | created | generated | purchased (choose one)",
+  "source": "exact source URL or local authored-source identifier",
+  "author": "actual author/provider",
+  "license": "exact reviewed terms",
+  "evidence_file": "docs/asset-rights/REPLACE.md",
+  "attribution_required": null,
+  "attribution": "",
+  "review_status": "pending",
+  "reviewer": "",
+  "use": "prototype_only",
+  "eagle_id": null
+}

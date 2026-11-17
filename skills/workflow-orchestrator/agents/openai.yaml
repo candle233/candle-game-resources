@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Orchestrator"
+  short_description: "Workflow Orchestrator for approved Unity project tasks"
+  default_prompt: "Use $workflow-orchestrator for the current approved project task."

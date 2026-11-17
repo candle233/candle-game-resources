@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "verification_date": "2026-11-17",
+  "method": "Bounded read-only unauthenticated GitHub REST metadata, commit and license API. No upstream implementation downloaded or executed; no installation commands inferred.",
+  "repositories": [
+    {
+      "requested_repository": "arielshad/3d-asset-server",
+      "requested_url": "https://github.com/arielshad/3d-asset-server",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/arielshad/3d-asset-server",
+      "default_branch": "main",
+      "license_api": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "49eb855e3cc0041bbe3b09997aca26830ec7c711",
+      "requested_ref": "HEAD",
+      "license_file_url": "https://github.com/arielshad/3d-asset-server/blob/49eb855e3cc0041bbe3b09997aca26830ec7c711/LICENSE",
+      "license_spdx": "Apache-2.0",
+      "readme_url": "https://github.com/arielshad/3d-asset-server/blob/49eb855e3cc0041bbe3b09997aca26830ec7c711/README.md"
+    },
+    {
+      "requested_repository": "neno-is-ooo/mcp-openverse",
+      "requested_url": "https://github.com/neno-is-ooo/mcp-openverse",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/neno-is-ooo/mcp-openverse",
+      "default_branch": "main",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "3146cfe4ae04d35502e45dfd85ac96cc21058790",
+      "requested_ref": "HEAD",
+      "license_file_url": "https://github.com/neno-is-ooo/mcp-openverse/blob/3146cfe4ae04d35502e45dfd85ac96cc21058790/LICENSE",
+      "license_spdx": "MIT",
+      "readme_url": "https://github.com/neno-is-ooo/mcp-openverse/blob/3146cfe4ae04d35502e45dfd85ac96cc21058790/README.md"
+    },
+    {
+      "requested_repository": "jeanpfs/stock-images-mcp",
+      "requested_url": "https://github.com/jeanpfs/stock-images-mcp",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/jeanpfs/stock-images-mcp",
+      "default_branch": "main",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "fa0da9b69d45e55c1ab76f8131f4b7767f1d9904",
+      "requested_ref": "HEAD",
+      "license_file_url": "https://github.com/jeanpfs/stock-images-mcp/blob/fa0da9b69d45e55c1ab76f8131f4b7767f1d9904/LICENSE",
+      "license_spdx": "MIT",
+      "readme_url": "https://github.com/jeanpfs/stock-images-mcp/blob/fa0da9b69d45e55c1ab76f8131f4b7767f1d9904/README.md"
+    },
+    {
+      "requested_repository": "jezweb/nasa-mcp-server",
+      "requested_url": "https://github.com/jezweb/nasa-mcp-server",
+      "verification_date": "2026-11-17",
+      "errors": [
+        "License: HTTP Error 404: Not Found"
+      ],
+      "canonical_url": "https://github.com/jezweb/nasa-mcp-server",
+      "default_branch": "main",
+      "license_api": null,
+      "verification_status": "metadata_verified",
+      "observed_commit": "0b003ad5fb66281286128f24e2156179a7153e00",
+      "requested_ref": "HEAD",
+      "readme_url": "https://github.com/jezweb/nasa-mcp-server/blob/0b003ad5fb66281286128f24e2156179a7153e00/README.md"
+    },
+    {
+      "requested_repository": "lucide-icons/lucide",
+      "requested_url": "https://github.com/lucide-icons/lucide",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/lucide-icons/lucide",
+      "default_branch": "main",
+      "license_api": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "daec1ba98186f500b02e3163bd14984e691b178a",
+      "requested_ref": "HEAD",
+      "license_file_url": "https://github.com/lucide-icons/lucide/blob/daec1ba98186f500b02e3163bd14984e691b178a/LICENSE",
+      "license_spdx": "NOASSERTION",
+      "readme_url": "https://github.com/lucide-icons/lucide/blob/daec1ba98186f500b02e3163bd14984e691b178a/README.md"
+    },
+    {
+      "requested_repository": "tabler/tabler-icons",
+      "requested_url": "https://github.com/tabler/tabler-icons",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/tabler/tabler-icons",
+      "default_branch": "main",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "85e870dbe8680c2d6deefd062122d30ef1544a41",
+      "requested_ref": "HEAD",
+      "license_file_url": "https://github.com/tabler/tabler-icons/blob/85e870dbe8680c2d6deefd062122d30ef1544a41/LICENSE",
+      "license_spdx": "MIT",
+      "readme_url": "https://github.com/tabler/tabler-icons/blob/85e870dbe8680c2d6deefd062122d30ef1544a41/README.md"
+    },
+    {
+      "requested_repository": "tailwindlabs/heroicons",
+      "requested_url": "https://github.com/tailwindlabs/heroicons",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/tailwindlabs/heroicons",
+      "default_branch": "master",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "616b7a4dbbf3d011760af8066262cd5c6b3868f3",
+      "requested_ref": "HEAD",
+      "license_file_url": "https://github.com/tailwindlabs/heroicons/blob/616b7a4dbbf3d011760af8066262cd5c6b3868f3/LICENSE",
+      "license_spdx": "MIT",
+      "readme_url": "https://github.com/tailwindlabs/heroicons/blob/616b7a4dbbf3d011760af8066262cd5c6b3868f3/README.md"
+    },
+    {
+      "requested_repository": "actions/checkout",
+      "requested_url": "https://github.com/actions/checkout",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/actions/checkout",
+      "default_branch": "main",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "11d5960a326750d5838078e36cf38b85af677262",
+      "requested_ref": "v4",
+      "license_file_url": "https://github.com/actions/checkout/blob/11d5960a326750d5838078e36cf38b85af677262/LICENSE",
+      "license_spdx": "MIT",
+      "readme_url": "https://github.com/actions/checkout/blob/11d5960a326750d5838078e36cf38b85af677262/README.md"
+    },
+    {
+      "requested_repository": "actions/setup-python",
+      "requested_url": "https://github.com/actions/setup-python",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/actions/setup-python",
+      "default_branch": "main",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "a26af69be951a213d495a4c3e4e4022e16d87065",
+      "requested_ref": "v5",
+      "license_file_url": "https://github.com/actions/setup-python/blob/a26af69be951a213d495a4c3e4e4022e16d87065/LICENSE",
+      "license_spdx": "MIT",
+      "readme_url": "https://github.com/actions/setup-python/blob/a26af69be951a213d495a4c3e4e4022e16d87065/README.md"
+    },
+    {
+      "requested_repository": "actions/upload-artifact",
+      "requested_url": "https://github.com/actions/upload-artifact",
+      "verification_date": "2026-11-17",
+      "errors": [],
+      "canonical_url": "https://github.com/actions/upload-artifact",
+      "default_branch": "main",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "verification_status": "metadata_verified",
+      "observed_commit": "ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "requested_ref": "v4",
+      "license_file_url": "https://github.com/actions/upload-artifact/blob/ea165f8d65b6e75b540449e92b4886f43607fa02/LICENSE",
+      "license_spdx": "MIT",
+      "readme_url": "https://github.com/actions/upload-artifact/blob/ea165f8d65b6e75b540449e92b4886f43607fa02/README.md"
+    }
+  ],
+  "interface_references": [
+    {
+      "name": "Eagle list",
+      "url": "https://api.eagle.cool/item/list",
+      "status": "archive_reference_preserved_not_runtime_tested"
+    },
+    {
+      "name": "Eagle addFromPath",
+      "url": "https://api.eagle.cool/item/add-from-path",
+      "status": "archive_reference_preserved_not_runtime_tested"
+    },
+    {
+      "name": "Blender",
+      "url": "https://www.blender.org/",
+      "status": "official_reference_only_no_bridge_selected"
+    }
+  ],
+  "limitation": "Earlier delegated tool lookup stalled and was stopped without a saved report. This replacement observes repository metadata only; transport/install/permissions require per-version README and implementation review before use."
+}

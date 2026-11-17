@@ -1,0 +1,56 @@
+{
+  "description": "Lightweight workflow reminders and best-effort safety guard. Not a sandbox.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I -c 'import pathlib,runpy,subprocess; p=subprocess.check_output([\"git\",\"rev-parse\",\"--show-toplevel\"],text=True).strip(); runpy.run_path(str(pathlib.Path(p)/\"harness/scripts/hooks.py\"),run_name=\"__main__\")'",
+            "commandWindows": "py -3 -I -c \"import pathlib,runpy,subprocess; p=subprocess.check_output(['git','rev-parse','--show-toplevel'],text=True).strip(); runpy.run_path(str(pathlib.Path(p)/'harness/scripts/hooks.py'),run_name='__main__')\"",
+            "timeout": 8
+          }
+        ],
+        "matcher": "startup|resume|compact|fork"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I -c 'import pathlib,runpy,subprocess; p=subprocess.check_output([\"git\",\"rev-parse\",\"--show-toplevel\"],text=True).strip(); runpy.run_path(str(pathlib.Path(p)/\"harness/scripts/hooks.py\"),run_name=\"__main__\")'",
+            "commandWindows": "py -3 -I -c \"import pathlib,runpy,subprocess; p=subprocess.check_output(['git','rev-parse','--show-toplevel'],text=True).strip(); runpy.run_path(str(pathlib.Path(p)/'harness/scripts/hooks.py'),run_name='__main__')\"",
+            "timeout": 8
+          }
+        ],
+        "matcher": "Bash|apply_patch|Edit|Write"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I -c 'import pathlib,runpy,subprocess; p=subprocess.check_output([\"git\",\"rev-parse\",\"--show-toplevel\"],text=True).strip(); runpy.run_path(str(pathlib.Path(p)/\"harness/scripts/hooks.py\"),run_name=\"__main__\")'",
+            "commandWindows": "py -3 -I -c \"import pathlib,runpy,subprocess; p=subprocess.check_output(['git','rev-parse','--show-toplevel'],text=True).strip(); runpy.run_path(str(pathlib.Path(p)/'harness/scripts/hooks.py'),run_name='__main__')\"",
+            "timeout": 8
+          }
+        ],
+        "matcher": "apply_patch|Edit|Write"
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I -c 'import pathlib,runpy,subprocess; p=subprocess.check_output([\"git\",\"rev-parse\",\"--show-toplevel\"],text=True).strip(); runpy.run_path(str(pathlib.Path(p)/\"harness/scripts/hooks.py\"),run_name=\"__main__\")'",
+            "commandWindows": "py -3 -I -c \"import pathlib,runpy,subprocess; p=subprocess.check_output(['git','rev-parse','--show-toplevel'],text=True).strip(); runpy.run_path(str(pathlib.Path(p)/'harness/scripts/hooks.py'),run_name='__main__')\"",
+            "timeout": 8
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unity Implementation"
+  short_description: "Unity Implementation for approved Unity project tasks"
+  default_prompt: "Use $unity-implementation for the current approved project task."

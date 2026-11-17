@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "native_client_config": false,
+  "resource_id": null,
+  "source_repository": null,
+  "approved_commit": null,
+  "license_evidence_url": null,
+  "transport": null,
+  "reviewed_executable": null,
+  "allowed_tools": [],
+  "allowed_filesystem_roots": [],
+  "allowed_network_destinations": [],
+  "credential_environment_variable_names": [],
+  "budget_usd": 0,
+  "writes_external_data": null,
+  "approved_by": null,
+  "approval_evidence": null,
+  "installed": false,
+  "connection_verified": false
+}

@@ -1,0 +1,2 @@
+# Local asset generation queue
+Use `assets.py todo` to create a request, full prompt and SVG card in `todo/assets/<id>/`. Never mark the request done merely because a prompt exists. `eagle_status` distinguishes pending, uncertain, submitted_unconfirmed and confirmed. An ambiguous upload requires reconciliation rather than blind re-upload. After a final asset is returned: review rights, import into Unity, inspect in game, register provenance and then close the request.

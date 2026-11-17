@@ -1,0 +1,486 @@
+{
+  "verification_date": "2026-11-17",
+  "method": "Read-only GitHub API metadata, fixed-commit README/LICENSE/tree observations; no upstream code execution or installation.",
+  "repositories": [
+    {
+      "requested_repository": "Unity-Technologies/skills",
+      "canonical_url": "https://github.com/Unity-Technologies/skills",
+      "verification_status": "verified_public",
+      "default_branch": "main",
+      "head_sha": "5841a34846f3e2b908c37aca1fca2eb15118a440",
+      "license": {
+        "api_metadata": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null
+        },
+        "endpoint_url": "https://api.github.com/repos/Unity-Technologies/skills/license?ref=5841a34846f3e2b908c37aca1fca2eb15118a440",
+        "endpoint_http_status": 200,
+        "license_file_path": "LICENSE.md",
+        "license_file_sha": "869c724c8cab8764b548fd5bd8cb8ea1fc849100",
+        "license_file_url": "https://github.com/Unity-Technologies/skills/blob/5841a34846f3e2b908c37aca1fca2eb15118a440/LICENSE.md",
+        "license_terms_url_as_written": "https://unity3d.com/legal/licenses/unity_companion_license",
+        "file_evidence_excerpt": "Licensed under the Unity Companion License for Unity-dependent projects (see https://unity3d.com/legal/licenses/unity_companion_license).",
+        "readme_license_claim": null,
+        "notes": "API 的通用 license.url 为 null，但根级 LICENSE.md 实际存在并明确指向 Unity Companion License。未访问外部条款页，也未将 NOASSERTION 改写为其他 SPDX。"
+      },
+      "readme": {
+        "url": "https://github.com/Unity-Technologies/skills/blob/5841a34846f3e2b908c37aca1fca2eb15118a440/README.md",
+        "installation": {
+          "stated": true,
+          "commands_verbatim": [
+            "npx skills add Unity-Technologies/skills"
+          ],
+          "steps_stated": [
+            "通用安装使用 npx skills add。",
+            "Claude Code 或 Codex 用户被建议改装官方 Unity plugin，而非分别安装这些 skills。",
+            "plugin 的两条安装命令仅指向另一仓库 README，本仓库 README 未给出具体命令。"
+          ],
+          "clients_named": [
+            "Claude Code",
+            "GitHub Copilot",
+            "Cursor",
+            "Cline",
+            "Codex"
+          ],
+          "client_support_scope": "开头列举 Claude Code、GitHub Copilot、Cursor、Cline，并链接 skills.sh 的其他 agents；另有 Claude Code/Codex plugin 建议。",
+          "requirements_stated": [
+            "许多 skills 通过 Unity CLI 直接驱动打开的 Unity Editor，而不是手改场景和资产文件。",
+            "README 称 agent 可在任务需要时安装 Unity CLI，Unity Hub 会自动安装 Unity CLI。"
+          ],
+          "external_installation_links": [
+            "https://github.com/Unity-Technologies/unity-agent-plugin",
+            "https://docs.unity.com/en-us/unity-cli/use-unity-cli",
+            "https://skills.sh"
+          ],
+          "evidence_excerpts": [
+            {
+              "section": "Using Claude Code or Codex?",
+              "text": "Install the [official Unity plugin](https://github.com/Unity-Technologies/unity-agent-plugin) instead. It ships these same skills as one package"
+            },
+            {
+              "section": "Works best with the Unity CLI",
+              "text": "Many skills drive your open Unity Editor directly instead of hand-editing scene and asset files. They do this through the [Unity CLI](https://docs.unity.com/en-us/unity-cli)"
+            }
+          ],
+          "not_stated_or_not_verified": [
+            "本 README 未给出 Node.js 版本下限。",
+            "未核验或安装链接所指的 plugin。"
+          ]
+        }
+      },
+      "root_license_paths": [
+        "LICENSE.md"
+      ],
+      "skill_definition_file_count": 37,
+      "notes": "根 README 有用途示例而非逐项 skill 清单；37 个 SKILL.md 路径来自完整 tree 元数据，未读取其正文。"
+    },
+    {
+      "requested_repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "canonical_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "verification_status": "verified_public",
+      "default_branch": "main",
+      "head_sha": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": {
+        "api_metadata": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "endpoint_url": "https://api.github.com/repos/gamedev-skills/awesome-gamedev-agent-skills/license?ref=c6ca6c41c839b68319ffc08430b99ab768debc32",
+        "endpoint_http_status": 200,
+        "license_file_path": "LICENSE",
+        "license_file_sha": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "license_file_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/c6ca6c41c839b68319ffc08430b99ab768debc32/LICENSE",
+        "readme_license_claim": "Apache-2.0",
+        "notice_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/c6ca6c41c839b68319ffc08430b99ab768debc32/NOTICE",
+        "notes": "README 指示参看 NOTICE 的署名与商标说明；tree 已确认 NOTICE 存在，未读取其全文。"
+      },
+      "readme": {
+        "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/c6ca6c41c839b68319ffc08430b99ab768debc32/README.md",
+        "installation": {
+          "stated": true,
+          "commands_verbatim": [
+            "npx skills add gamedev-skills/awesome-gamedev-agent-skills",
+            "claude plugin marketplace add gamedev-skills/awesome-gamedev-agent-skills",
+            "claude plugin install gamedev@awesome-gamedev-agent-skills",
+            "claude plugin install router@awesome-gamedev-agent-skills",
+            "claude plugin install godot@awesome-gamedev-agent-skills    # or: unity · unreal · ebitengine · web-engines · other-engines"
+          ],
+          "steps_stated": [
+            "通用 skills CLI 检测现有 coding agent，安装 router 和 79 个 skills。",
+            "--list 用于预览，-g 用于全项目安装，-a <agent> 指定客户端；README 示例有 cursor、claude-code、gemini-cli。",
+            "Claude Code 可选 marketplace/plugin 安装；也可只装 router 和所需 engine bundle。",
+            "也可把单个 skill 的 <name>/ 文件夹手动放到客户端 skills 目录；更详细安装方式链接 docs/INSTALLATION.md。"
+          ],
+          "clients_named": [
+            "Claude Code",
+            "Claude",
+            "Cursor",
+            "Windsurf",
+            "Cline",
+            "OpenAI Codex",
+            "Gemini CLI",
+            "GitHub Copilot",
+            "Kiro",
+            "Antigravity",
+            "VS Code",
+            "Oh My Pi (omp)"
+          ],
+          "requirements_stated": [
+            "skills CLI 需要 Node.js 22.20 或更高版本。",
+            "Claude plugin 安装方式使用 Claude Code 自身命令。",
+            "手动安装需要支持 Agent Skills / SKILL.md 的客户端。"
+          ],
+          "manual_paths_as_written": [
+            {
+              "agents": [
+                "Claude Code"
+              ],
+              "path": ".claude/skills/"
+            },
+            {
+              "agents": [
+                "Codex",
+                "Gemini CLI",
+                "GitHub Copilot",
+                "Antigravity"
+              ],
+              "path": ".agents/skills/"
+            },
+            {
+              "agents": [
+                "Cursor"
+              ],
+              "path": ".cursor/skills/",
+              "also_reads": [
+                ".agents/skills/"
+              ]
+            },
+            {
+              "agents": [
+                "Windsurf"
+              ],
+              "path": ".devin/skills/",
+              "also_reads": [
+                ".windsurf/skills/"
+              ]
+            },
+            {
+              "agents": [
+                "Cline"
+              ],
+              "path": ".cline/skills/"
+            },
+            {
+              "agents": [
+                "Kiro"
+              ],
+              "path": ".kiro/skills/"
+            },
+            {
+              "agents": [
+                "Oh My Pi (omp)"
+              ],
+              "path": ".omp/skills/",
+              "also_reads": [
+                ".agents/skills/"
+              ]
+            }
+          ],
+          "evidence_excerpts": [
+            {
+              "section": "Quick start",
+              "text": "The CLI needs Node.js 22.20 or later."
+            },
+            {
+              "section": "Quick start",
+              "text": "This repo is also a Claude Code plugin marketplace, so you can install it with Claude's own commands"
+            },
+            {
+              "section": "Agent compatibility",
+              "text": "Drop a skill's `<name>/` folder into your agent's skills directory"
+            }
+          ],
+          "linked_documentation": [
+            "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/c6ca6c41c839b68319ffc08430b99ab768debc32/docs/INSTALLATION.md",
+            "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/c6ca6c41c839b68319ffc08430b99ab768debc32/docs/COMPATIBILITY.md"
+          ],
+          "not_stated_or_not_verified": [
+            "兼容性、测试通过率和引擎版本为 README 的上游声明，本次未独立执行验证。",
+            "未读取链接所指安装/兼容性文档全文；上列方式直接取自根 README。"
+          ]
+        }
+      },
+      "root_license_paths": [
+        "LICENSE"
+      ],
+      "skill_definition_file_count": 80,
+      "notes": "README 列出 79 specialized skills + router；完整 tree 共 80 个 SKILL.md，其中 skills/unity/ 下 9 个。"
+    },
+    {
+      "requested_repository": "Yuki001/game-dev-skills",
+      "canonical_url": "https://github.com/Yuki001/game-dev-skills",
+      "verification_status": "verified_public",
+      "default_branch": "main",
+      "head_sha": "ef297c3b2e04c1000c9a1b9df88bc0296423abfb",
+      "license": {
+        "api_metadata": null,
+        "endpoint_url": "https://api.github.com/repos/Yuki001/game-dev-skills/license?ref=ef297c3b2e04c1000c9a1b9df88bc0296423abfb",
+        "endpoint_http_status": 404,
+        "license_file_path": null,
+        "license_file_sha": null,
+        "license_file_url": null,
+        "readme_license_claim": null,
+        "notes": "仓库 API 的 license 为 null；完整 tree 中无 LICENSE/LICENCE/COPYING 文件。不能由公开可访问推断复制或再分发许可。"
+      },
+      "readme": {
+        "url": "https://github.com/Yuki001/game-dev-skills/blob/ef297c3b2e04c1000c9a1b9df88bc0296423abfb/README.md",
+        "installation": {
+          "stated": false,
+          "commands_verbatim": [],
+          "steps_stated": [],
+          "clients_named": [],
+          "requirements_stated": [],
+          "evidence_excerpts": [
+            {
+              "section": "Introduction",
+              "text": "This is my personal agent skill repository, primarily focused on game development."
+            },
+            {
+              "section": "Skill table",
+              "text": "Game Agents Toolkit — a milestone-driven game design pre-production workflow. Downstream implementation can continue with OpenSpec or Superpowers."
+            }
+          ],
+          "not_stated_or_not_verified": [
+            "根 README 仅列技能和描述，没有安装命令、通用安装路径或客户端要求。",
+            "不能据 skill 文件结构补猜 npx 命令。",
+            "技能各自的依赖未读取或测试。"
+          ]
+        }
+      },
+      "root_license_paths": [],
+      "skill_definition_file_count": 22,
+      "notes": "根表是 12 个独立 skills 加 GAT 入口；GAT 的 5 个 skill 名分别在 .agents 和 .claude 中各有一套路径，不能把 22 个文件路径误称为 22 个不同技能。"
+    },
+    {
+      "requested_repository": "Hanjo92/roguelike-game-designer-skill",
+      "canonical_url": "https://github.com/Hanjo92/roguelike-game-designer-skill",
+      "verification_status": "verified_public",
+      "default_branch": "main",
+      "head_sha": "360533660b7f16c68aeeb3cb59ebedc58ed623b3",
+      "license": {
+        "api_metadata": null,
+        "endpoint_url": "https://api.github.com/repos/Hanjo92/roguelike-game-designer-skill/license?ref=360533660b7f16c68aeeb3cb59ebedc58ed623b3",
+        "endpoint_http_status": 404,
+        "license_file_path": null,
+        "license_file_sha": null,
+        "license_file_url": null,
+        "readme_license_claim": "MIT",
+        "readme_claim_url": "https://github.com/Hanjo92/roguelike-game-designer-skill/blob/360533660b7f16c68aeeb3cb59ebedc58ed623b3/README.md#license",
+        "notes": "README 的 License 节只有 MIT 字样；API license 为 null，完整 tree 无许可证文件。本次只报告声明与证据差异，不把 API SPDX 补成 MIT。"
+      },
+      "readme": {
+        "url": "https://github.com/Hanjo92/roguelike-game-designer-skill/blob/360533660b7f16c68aeeb3cb59ebedc58ed623b3/README.md",
+        "installation": {
+          "stated": true,
+          "commands_verbatim": [],
+          "steps_stated": [
+            "Claude Code：将整个目录复制到该环境支持的项目级或用户级 skills 目录，保持 SKILL.md 位于 skill 根。",
+            "Codex：将目录复制或 symlink 到该环境使用的 skills 目录，重启 session 以重新发现 skills。",
+            "Antigravity 或其他 Agent Skills 客户端：把该目录注册为 skill root。",
+            "不支持 Agent Skills 时：把 SKILL.md 作为项目指令或可复用上下文附加。"
+          ],
+          "clients_named": [
+            "Claude Code",
+            "Codex",
+            "Antigravity",
+            "other agents"
+          ],
+          "requirements_stated": [
+            "目录根保留 SKILL.md。",
+            "无 Hermes-specific runtime dependency。"
+          ],
+          "evidence_excerpts": [
+            {
+              "section": "Installation / Claude Code",
+              "text": "Copy this directory into a project-level or user-level skills directory supported by your Claude Code setup, keeping `SKILL.md` at the skill root."
+            },
+            {
+              "section": "Installation / Codex",
+              "text": "Copy or symlink this directory into the Codex skills directory used by your environment, then restart the session so skills are rediscovered."
+            },
+            {
+              "section": "Installation / Antigravity and other agents",
+              "text": "If the agent supports the Agent Skills convention, register this directory as a skill root. Otherwise, attach `SKILL.md` as project instructions or reusable context."
+            }
+          ],
+          "not_stated_or_not_verified": [
+            "README 没有给出精确安装目录路径或 npx 安装命令。",
+            "这是一项跨引擎设计/评审 skill，并非 README 声称的 Unity Editor 自动化插件。"
+          ]
+        }
+      },
+      "root_license_paths": [],
+      "skill_definition_file_count": 1,
+      "notes": "单一 skill 放在仓库根；references/、templates/、evals/ 为支持目录，未读取其实现正文。"
+    },
+    {
+      "requested_repository": "861172923/Unity-Skills",
+      "canonical_url": "https://github.com/861172923/Unity-Skills",
+      "verification_status": "verified_public",
+      "default_branch": "main",
+      "head_sha": "6093d0586210b338c821c07ab0e4a238a8be8508",
+      "license": {
+        "api_metadata": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "endpoint_url": "https://api.github.com/repos/861172923/Unity-Skills/license?ref=6093d0586210b338c821c07ab0e4a238a8be8508",
+        "endpoint_http_status": 200,
+        "license_file_path": "LICENSE",
+        "license_file_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "license_file_url": "https://github.com/861172923/Unity-Skills/blob/6093d0586210b338c821c07ab0e4a238a8be8508/LICENSE",
+        "readme_license_claim": "Apache License 2.0"
+      },
+      "readme": {
+        "url": "https://github.com/861172923/Unity-Skills/blob/6093d0586210b338c821c07ab0e4a238a8be8508/README.md",
+        "installation": {
+          "stated": true,
+          "commands_verbatim": [],
+          "steps_stated": [
+            "AI 助手开发者：克隆本仓库；将 skills/ 配置到 AI 助手技能路径；让 AI 读取 CLAUDE.md；实现命令文件写入和结果读取逻辑。",
+            "Unity 开发者：在 Unity 项目中实现命令监听器；监听 UnityCommands/pending/；解析执行 JSON；将结果写入 UnityCommands/results/。"
+          ],
+          "clients_named": [
+            "支持文件系统操作的 AI 助手",
+            "Unity Editor"
+          ],
+          "related_clients_linked_not_required": [
+            "Claude AI"
+          ],
+          "requirements_stated": [
+            "支持文件系统操作的 AI 助手和相应 Unity 编辑器插件。",
+            "用户自行实现命令监听器及命令/结果文件交互逻辑。",
+            "AI 需读取 CLAUDE.md 获取使用说明。"
+          ],
+          "evidence_excerpts": [
+            {
+              "section": "快速开始 / 对于 AI 助手开发者",
+              "text": "1. 克隆本仓库\n2. 将 `skills/` 目录配置到 AI 助手的技能路径\n3. 配置 AI 读取 `CLAUDE.md` 获取使用说明\n4. 实现命令文件的写入和结果读取逻辑"
+            },
+            {
+              "section": "快速开始 / 对于 Unity 开发者",
+              "text": "1. 在 Unity 项目中实现命令监听器\n2. 监听 `UnityCommands/pending/` 目录\n3. 解析并执行 JSON 命令\n4. 将结果写入 `UnityCommands/results/` 目录"
+            },
+            {
+              "section": "注意",
+              "text": "本项目需要配合支持文件系统操作的 AI 助手和相应的 Unity 编辑器插件使用。"
+            }
+          ],
+          "not_stated_or_not_verified": [
+            "克隆是上游 README 的安装说明，本次未执行。",
+            "没有 npx/marketplace 命令、客户端版本或可直接安装的 Unity 插件包说明。",
+            "CLAUDE.md 文件名和 Claude AI 相关链接不能推断为必须使用 Claude Code。"
+          ]
+        }
+      },
+      "root_license_paths": [
+        "LICENSE"
+      ],
+      "skill_definition_file_count": 0,
+      "notes": "完整 tree 确认是文档/JSON 命令协议式技能目录，不是标准 SKILL.md 文件夹，也没有随仓库发布的 Unity C# 监听器实现。"
+    },
+    {
+      "requested_repository": "MuharremTozan/unity-agent-skills",
+      "canonical_url": "https://github.com/MuharremTozan/unity-agent-skills",
+      "verification_status": "verified_public",
+      "default_branch": "main",
+      "head_sha": "79bec6baaf41268f60f0934054cbe8ad46895ab4",
+      "license": {
+        "api_metadata": null,
+        "endpoint_url": "https://api.github.com/repos/MuharremTozan/unity-agent-skills/license?ref=79bec6baaf41268f60f0934054cbe8ad46895ab4",
+        "endpoint_http_status": 404,
+        "license_file_path": null,
+        "license_file_sha": null,
+        "license_file_url": null,
+        "readme_license_claim": null,
+        "notes": "repository API license 为 null；完整 tree 无 LICENSE/LICENCE/COPYING 文件，不推测授权。"
+      },
+      "readme": {
+        "url": "https://github.com/MuharremTozan/unity-agent-skills/blob/79bec6baaf41268f60f0934054cbe8ad46895ab4/README.md",
+        "installation": {
+          "stated": true,
+          "commands_verbatim": [
+            "npx skills add MuharremTozan/unity-agent-skills/<skill-name>"
+          ],
+          "steps_stated": [
+            "README 使用 Agent Skills CLI 按单项 <skill-name> 安装进项目。"
+          ],
+          "clients_named": [
+            "Claude",
+            "Cursor",
+            "Windsurf"
+          ],
+          "client_support_scope": "介绍中以 like Claude, Cursor, and Windsurf 举例，没有在 README 中将 Claude 具体化为 Claude Code。",
+          "requirements_stated": [
+            "技能面向 Unity 6 开发。",
+            "安装命令使用 Agent Skills CLI。"
+          ],
+          "evidence_excerpts": [
+            {
+              "section": "Introduction",
+              "text": "AI coding agents (like Claude, Cursor, and Windsurf) for professional Unity 6 development."
+            },
+            {
+              "section": "Usage",
+              "text": "Install skills directly into your project using the Agent Skills CLI:"
+            }
+          ],
+          "not_stated_or_not_verified": [
+            "未声明 Node.js 最低版本或每客户端安装路径。",
+            "仅记录该 README 原命令，未将其改写为其他 CLI 参数格式或验证其安装成功。"
+          ]
+        }
+      },
+      "root_license_paths": [],
+      "skill_definition_file_count": 29,
+      "notes": "可链接为 Unity 6 架构模式和系统设计技能集合；不要把 README 的 planner 当作已存在条目，不把嵌套路径计为独立技能。未发现许可证，维持仅出处链接且不 vendoring。"
+    },
+    {
+      "requested_repository": "Logiiiii/unity-agent-skills",
+      "canonical_url": null,
+      "verification_status": "unverified_public_404",
+      "default_branch": null,
+      "head_sha": null,
+      "license": {
+        "api_metadata": null,
+        "endpoint_url": null,
+        "endpoint_http_status": null,
+        "license_file_path": null,
+        "license_file_sha": null,
+        "license_file_url": null,
+        "readme_license_claim": null,
+        "notes": "这里 null 表示仓库元数据未取得，不表示成功读取了仓库且 API license 字段为 null；未猜许可证或提交。"
+      },
+      "readme": {
+        "url": null,
+        "installation": {
+          "stated": null,
+          "commands_verbatim": [],
+          "steps_stated": [],
+          "clients_named": null,
+          "requirements_stated": null,
+          "notes": "公开 API 404，未能核验 README；不套用同名仓库的安装命令或客户端。"
+        }
+      },
+      "root_license_paths": null,
+      "skill_definition_file_count": null,
+      "notes": "未知，不能将 404 推断为无 LICENSE 或无 skills。"
+    }
+  ]
+}

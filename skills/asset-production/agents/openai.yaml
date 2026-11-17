@@ -1,0 +1,4 @@
+interface:
+  display_name: "Asset Production"
+  short_description: "Asset Production for approved Unity project tasks"
+  default_prompt: "Use $asset-production for the current approved project task."

@@ -1,0 +1,26 @@
+name: Workflow checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+      - run: python -I -X utf8 harness/scripts/workflow.py check
+      - run: python -I -X utf8 -m unittest discover -s harness/tests -v
+# Action sources and licenses: candle-game-resources/THIRD_PARTY_NOTICES.md.
+# Offline checks do not run Unity or approve a release.

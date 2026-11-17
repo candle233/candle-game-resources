@@ -1,0 +1,5 @@
+# Native Codex prefix rules; not a complete shell policy or filesystem ACL.
+prefix_rule(pattern = ["git", "push"], decision = "prompt")
+prefix_rule(pattern = ["git", "reset", "--hard"], decision = "forbidden")
+prefix_rule(pattern = ["git", "clean", "-fd"], decision = "forbidden")
+prefix_rule(pattern = ["git", "clean", "-fdx"], decision = "forbidden")

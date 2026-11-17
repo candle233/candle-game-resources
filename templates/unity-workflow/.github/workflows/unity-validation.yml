@@ -1,0 +1,40 @@
+name: Unity validation (trusted manual run)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: unity-${{ github.repository }}
+  cancel-in-progress: false
+jobs:
+  trust-check:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: unity-validation
+    steps:
+      - run: printf '%s\n' 'Protected environment approval completed for main.'
+  validate:
+    needs: trust-check
+    if: github.ref == 'refs/heads/main'
+    runs-on: [self-hosted, unity]
+    environment: unity-validation
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          lfs: true
+      - name: Verify local Python
+        run: python -I -c "import sys; assert sys.version_info >= (3, 11), 'Python 3.11+ required'"
+      - name: Test installed Unity
+        run: python -I -X utf8 harness/scripts/unity_cli.py verify
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: unity-evidence-${{ github.run_id }}
+          path: Artifacts/harness/unity/
+          if-no-files-found: warn
+# Before enabling: configure environment required reviewers and allowed main branch,
+# protect main and this workflow, and use an isolated trusted runner with a matching
+# licensed Editor, UNITY_EDITOR, Python, Git LFS and display/GPU as needed.
+# Never run untrusted fork code here. No build/release approval or publishing occurs.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unity Verification"
+  short_description: "Unity Verification for approved Unity project tasks"
+  default_prompt: "Use $unity-verification for the current approved project task."
