@@ -541,7 +541,21 @@
       },
       "default_branch": "main",
       "readme_url": "https://github.com/arielshad/3d-asset-server/blob/49eb855e3cc0041bbe3b09997aca26830ec7c711/README.md",
-      "verification_status": "metadata_verified"
+      "verification_status": "metadata_verified",
+      "installation": {
+        "verified_install_method": "Node 20+; npm ci --ignore-scripts; npm run build:server; node dist/cli.js mcp",
+        "runtime": "stdio MCP",
+        "tools_verified": [
+          "search_assets",
+          "get_asset",
+          "download_asset",
+          "list_providers"
+        ],
+        "needs_credentials": false,
+        "notes": "Downloads assets to ASSET_DOWNLOAD_DIR (default ./assets). Telemetry can be disabled with ASSET_SERVER_TELEMETRY=0 or DO_NOT_TRACK=1. Review each downloaded asset license.",
+        "verified_on": "2026-11-17",
+        "local_runtime": "Windows / Node 24.6.0 / Python 3.13.9"
+      }
     },
     {
       "id": "provider:freesound-mcp",
@@ -641,7 +655,24 @@
       },
       "default_branch": "main",
       "readme_url": "https://github.com/jeanpfs/stock-images-mcp/blob/fa0da9b69d45e55c1ab76f8131f4b7767f1d9904/README.md",
-      "verification_status": "metadata_verified"
+      "verification_status": "metadata_verified",
+      "installation": {
+        "verified_install_method": "Node 22+; npm ci --ignore-scripts; npm run build; node dist/index.js",
+        "runtime": "stdio MCP",
+        "tools_verified": [
+          "search_images",
+          "download_image"
+        ],
+        "needs_credentials": true,
+        "credential_environment_variables": [
+          "PEXELS_API_KEY",
+          "UNSPLASH_API_KEY",
+          "PIXABAY_API_KEY"
+        ],
+        "notes": "At least one provider key is required. It was not registered in the client until a key is supplied.",
+        "verified_on": "2026-11-17",
+        "local_runtime": "Windows / Node 24.6.0 / Python 3.13.9"
+      }
     },
     {
       "id": "provider:jezweb/nasa-mcp-server",
@@ -678,7 +709,31 @@
       },
       "default_branch": "main",
       "readme_url": "https://github.com/jezweb/nasa-mcp-server/blob/0b003ad5fb66281286128f24e2156179a7153e00/README.md",
-      "verification_status": "metadata_verified"
+      "verification_status": "metadata_verified",
+      "installation": {
+        "verified_install_method": "Python 3.8+; python -m venv .venv; pip install -r requirements.txt; .venv python nasa_server.py",
+        "runtime": "stdio MCP",
+        "tools_verified": [
+          "get_apod",
+          "get_random_apod",
+          "get_apod_date_range",
+          "get_mars_photos_by_sol",
+          "get_mars_photos_by_date",
+          "get_latest_mars_photos",
+          "get_rover_manifest",
+          "get_asteroids_feed",
+          "lookup_asteroid",
+          "browse_asteroids",
+          "search_nasa_media"
+        ],
+        "needs_credentials": true,
+        "credential_environment_variables": [
+          "API_KEY"
+        ],
+        "notes": "Defaults to DEMO_KEY (about 30 requests/hour and 50/day). Apply for a free key at api.nasa.gov for normal use. Upstream does not include a LICENSE file.",
+        "verified_on": "2026-11-17",
+        "local_runtime": "Windows / Node 24.6.0 / Python 3.13.9"
+      }
     },
     {
       "id": "provider:neno-is-ooo/mcp-openverse",
@@ -721,7 +776,22 @@
       },
       "default_branch": "main",
       "readme_url": "https://github.com/neno-is-ooo/mcp-openverse/blob/3146cfe4ae04d35502e45dfd85ac96cc21058790/README.md",
-      "verification_status": "metadata_verified"
+      "verification_status": "metadata_verified",
+      "installation": {
+        "verified_install_method": "Node 18+; npm install --ignore-scripts; npm run build; node dist/index.js",
+        "runtime": "stdio MCP",
+        "tools_verified": [
+          "search_images",
+          "get_image_details",
+          "get_related_images",
+          "get_image_stats",
+          "search_images_for_essay"
+        ],
+        "needs_credentials": false,
+        "notes": "Openverse results carry attribution requirements; a code license does not clear individual images.",
+        "verified_on": "2026-11-17",
+        "local_runtime": "Windows / Node 24.6.0 / Python 3.13.9"
+      }
     },
     {
       "id": "provider:pixabay-mcp",
@@ -813,5 +883,6 @@
       "notes": "Referenced by CI YAML, not bundled source. Fixed reference is not a full action implementation security audit."
     }
   ],
-  "notes": "Observed upstream commits are not approved dependencies. Tool observations do not grant software, service, or asset rights. All candidate implementations remain uninstalled."
+  "notes": "Observed upstream commits are not approved dependencies. Tool observations do not grant software, service, or asset rights. All candidate implementations remain uninstalled.",
+  "installation_note": "Install commands were executed locally and each server completed an MCP initialize + tools/list handshake. No live provider API calls were made. Commands are recipes, not approval to install on another machine or to use returned assets."
 }

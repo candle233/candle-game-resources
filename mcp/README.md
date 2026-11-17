@@ -20,3 +20,76 @@
 6. 保存无敏感信息的连通性验证结果。未验证不得标成 ready/connected。
 
 Eagle 使用项目内 Python 对本机 `127.0.0.1:41595` 的 HTTP 适配，不是第三方 MCP；未获得授权时不查询或写入私有库。上游 API 返回的素材也必须独立检查素材许可证。
+
+## 已实际验证的本地安装方式（2026-11-17）
+
+以下命令在 Windows / Node 24.6.0 / Python 3.13.9 上实际执行，四个服务均完成 MCP `initialize` 与 `tools/list` 握手；**没有调用外部素材 API**。命令是可复现配方，不是对他人机器的安装授权；先审阅对应固定 commit 的 README 与源码。
+
+### 3D Asset Server
+
+```powershell
+git clone https://github.com/arielshad/3d-asset-server.git
+cd 3d-asset-server
+npm ci --ignore-scripts
+npm run build:server
+# MCP stdio 入口；下载目录按需修改
+$env:ASSET_DOWNLOAD_DIR = "C:\path\to\game\Artifacts\assets"
+$env:ASSET_SERVER_TELEMETRY = "0"
+node dist/cli.js mcp
+```
+
+工具：`search_assets`、`get_asset`、`download_asset`、`list_providers`。下载的模型/贴图/HDR 仍需逐个核对许可证。
+
+### Openverse
+
+```powershell
+git clone https://github.com/neno-is-ooo/mcp-openverse.git
+cd mcp-openverse
+npm install --ignore-scripts
+npm run build
+node dist/index.js
+```
+
+工具：`search_images`、`get_image_details`、`get_related_images`、`get_image_stats`、`search_images_for_essay`。结果自带署名要求，不等于可无条件商用。
+
+### Stock Images（需要 Key）
+
+```powershell
+git clone https://github.com/jeanpfs/stock-images-mcp.git
+cd stock-images-mcp
+npm ci --ignore-scripts
+npm run build
+$env:PEXELS_API_KEY = "..."; $env:UNSPLASH_API_KEY = "..."; $env:PIXABAY_API_KEY = "..."
+node dist/index.js
+```
+
+至少配置 Pexels、Unsplash、Pixabay 中一个 Key。没有 Key 时不要把它登记成可用服务。
+
+### NASA
+
+```powershell
+git clone https://github.com/jezweb/nasa-mcp-server.git
+cd nasa-mcp-server
+python -m venv .venv
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+$env:API_KEY = "DEMO_KEY"   # 约 30 次/小时、50 次/天；正常使用请申请免费 Key
+.venv\Scripts\python.exe nasa_server.py
+```
+
+工具覆盖 APOD、火星车照片、近地天体与 NASA 媒体库。上游没有 LICENSE 文件，使用前自行确认授权。
+
+客户端配置片段（`mcpServers` 风格；不同客户端字段可能不同）：
+
+```json
+{
+  "mcpServers": {
+    "3d-asset": {
+      "command": "node",
+      "args": ["C:/tools/3d-asset-server/dist/cli.js", "mcp"],
+      "env": { "ASSET_DOWNLOAD_DIR": "C:/game/Artifacts/assets", "ASSET_SERVER_TELEMETRY": "0" }
+    }
+  }
+}
+```
+
+不要把真实 Key、个人绝对路径或客户端备份提交到仓库。
