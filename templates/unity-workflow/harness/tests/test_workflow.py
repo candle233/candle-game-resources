@@ -187,6 +187,11 @@ class AssetTests(Workspace):
     def test_unregistered_media_fails(self):
         (self.root/'Assets/x.png').write_bytes(b'x')
         with contextlib.redirect_stdout(io.StringIO()):self.assertEqual(assets.check(self.root),1)
+    def test_check_normalizes_root(self):
+        # safe() resolves roots; check() must resolve too or rglob paths fail relative_to.
+        (self.root/'Assets/x.png').write_bytes(b'x')
+        alias=self.root/'..'/self.root.name
+        with contextlib.redirect_stdout(io.StringIO()):self.assertEqual(assets.check(alias),1)
     def test_prototype_not_shipping(self):
         p=self.root/'Assets/x.png';p.write_bytes(b'x');common.save(self.root/'harness/assets/registry.json',{'schema_version':1,'assets':[{'id':'x','file':'Assets/x.png','sha256':common.sha(p),'use':'prototype_only'}]})
         with contextlib.redirect_stdout(io.StringIO()):self.assertEqual(assets.check(self.root),0);self.assertEqual(assets.check(self.root,True),1)

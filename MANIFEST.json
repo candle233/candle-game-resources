@@ -269,7 +269,7 @@
     {
       "path": "templates/unity-workflow/harness/scripts/assets.py",
       "target": "harness/scripts/assets.py",
-      "sha256": "1a02bd5691f9120ccc908703a89d4cbcb59c17706a7526e23fb3c3dd787de943"
+      "sha256": "3f5c7b3a928a2267de3244bc84cb29566d14b272bb8c8a509a80a3be907af13d"
     },
     {
       "path": "templates/unity-workflow/harness/scripts/common.py",
@@ -324,7 +324,7 @@
     {
       "path": "templates/unity-workflow/harness/tests/test_workflow.py",
       "target": "harness/tests/test_workflow.py",
-      "sha256": "450aa04aee90e6d679dd862bbbbdfd0816723d8874e7c0e9da7708b0577c0179"
+      "sha256": "2dff9b5d6517bed917a06e26ddb42b64d4e7c2f0730814164e8fa9bcb6794e94"
     },
     {
       "path": "templates/unity-workflow/tasks/README.md",

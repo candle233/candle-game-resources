@@ -61,6 +61,9 @@ def sync(root,r):
         r['last_error']=str(exc);save(path,r);print('Eagle pending: '+str(exc),file=sys.stderr);return False
 
 def check(root,release=False):
+    # Normalize once: safe() resolves paths, so an unresolved root (for example
+    # a Windows 8.3 temp path such as RUNNER~1) would not match rglob results.
+    root=Path(root).resolve()
     reg=load(root/'harness/assets/registry.json');conf=load(root/'harness/project.json');errors=[];seen=set();ids=set()
     if reg.get('schema_version')!=1 or not isinstance(reg.get('assets'),list):raise ValueError('Invalid asset registry')
     for a in reg['assets']:
